@@ -15,7 +15,7 @@ Your daily dose of amazing content! A Next.js app that aggregates various daily 
 ## Tech Stack 🛠️
 
 - **Next.js 15** with App Router
-- **TypeScript** for type safety
+- **TypeScript**
 - **Tailwind CSS** for styling
 - **Server-Side Rendering (SSR)** for optimal performance
 - **API Integration** with multiple external services
@@ -56,15 +56,6 @@ npm install
 cp .env.example .env.local
 ```
 
-Add the following variables to `.env.local`:
-```env
-# NASA API Key (optional - uses DEMO_KEY if not provided)
-NASA_API_KEY=your_nasa_api_key_here
-
-# RapidAPI Key (optional - for enhanced word features)
-RAPIDAPI_KEY=your_rapidapi_key_here
-```
-
 4. Run the development server:
 ```bash
 npm run dev
@@ -84,43 +75,7 @@ npm run dev
 2. Sign up and subscribe to WordsAPI
 3. Add to your `.env.local` file
 
-**Note:** The app works without API keys using fallback data, but having them enhances the experience.
-
-## Project Structure 📁
-
-```
-dailydose/
-├── app/
-│   ├── components/
-│   │   └── Navigation.tsx
-│   ├── word-of-the-day/
-│   │   ├── page.tsx
-│   │   └── WordOfTheDay.tsx
-│   ├── quote-of-the-day/
-│   │   ├── page.tsx
-│   │   └── QuoteOfTheDay.tsx
-│   ├── fact-of-the-day/
-│   │   ├── page.tsx
-│   │   └── FactOfTheDay.tsx
-│   ├── nasa-picture/
-│   │   ├── page.tsx
-│   │   └── NasaPicture.tsx
-│   ├── cocktail-of-the-day/
-│   │   ├── page.tsx
-│   │   └── CocktailOfTheDay.tsx
-│   ├── activity-suggestion/
-│   │   ├── page.tsx
-│   │   └── ActivitySuggestion.tsx
-│   ├── historical-fact/
-│   │   ├── page.tsx
-│   │   └── HistoricalFact.tsx
-│   ├── layout.tsx
-│   ├── page.tsx
-│   └── globals.css
-├── public/
-├── package.json
-└── README.md
-```
+**Note:** The app works without API keys using fallback data, but having them it what makes the experience.
 
 ## Features in Detail 📋
 
@@ -158,57 +113,5 @@ dailydose/
 - Historical events from today's date
 - Year and detailed descriptions
 - Uses Today in History API
-
-## Performance Optimizations ⚡
-
-- **SSR** for fast initial page loads
-- **Caching** with 24-hour revalidation
-- **Image optimization** with Next.js Image component
-- **Suspense boundaries** for better loading states
-- **Fallback data** for API failures
-
-## Styling & UI 🎨
-
-- **Responsive design** for all screen sizes
-- **Dark mode support** with Tailwind CSS
-- **Beautiful gradients** and modern UI
-- **Smooth animations** and transitions
-- **Accessible design** with proper contrast and focus states
-
-## Deployment 🚀
-
-### Vercel (Recommended)
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Add environment variables in Vercel dashboard
-4. Deploy automatically
-
-### Other Platforms
-The app can be deployed to any platform that supports Next.js:
-- Netlify
-- Railway
-- DigitalOcean App Platform
-- AWS Amplify
-
-## Contributing 🤝
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License 📄
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## Acknowledgments 🙏
-
-- All the free APIs that make this project possible
-- Next.js team for the amazing framework
-- Tailwind CSS for the utility-first styling
-- The open-source community for inspiration
-
----
 
 **Daily Dose** - Your daily dose of amazing content! 🌟

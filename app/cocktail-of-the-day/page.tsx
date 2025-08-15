@@ -1,6 +1,8 @@
 import { Suspense } from 'react';
 import CocktailOfTheDay from './CocktailOfTheDay';
 
+export const revalidate = 86400; // Revalidate page every 24 hours
+
 export const metadata = {
   title: 'Cocktail of the Day - Daily Dose',
   description: 'Discover a new drink recipe to try and impress your friends',
@@ -8,13 +10,13 @@ export const metadata = {
 
 export default function CocktailOfTheDayPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-900 to-gray-950">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             🍸 Cocktail of the Day
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
+          <p className="text-xl text-gray-300">
             Discover a new drink recipe to try today
           </p>
         </div>

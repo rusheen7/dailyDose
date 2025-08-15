@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Daily Dose - Your Daily Dose of Interesting Content",
-  description: "Get your daily dose of words, quotes, facts, space images, cocktails, activities, and historical facts",
+  title: "Daily Dose",
+  description: "Your Daily Dose of Interesting Content",
+  icons: {icon: '/favicon.jpg'},
 };
 
 export default function RootLayout({
@@ -24,10 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className="dark">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased font-sans bg-gray-900 text-gray-100`}>
         <Navigation />
         <main className="min-h-screen pt-16">
           {children}

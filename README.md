@@ -1,36 +1,29 @@
-# Daily Dose 💊
+# Daily Dose
 
-Your daily dose of amazing content! A Next.js app that aggregates various daily content from different APIs, refreshing daily to provide you with words, quotes, facts, space images, cocktails, activities, and historical moments.
+Your daily dose of amazing content — all in one place!
+A Next.js app that displays all sorts of words, quotes, facts, space images, cocktails, activities, and historical moments from multiple APIs. Refreshes every single daily for a fresh experience every time you visit.
 
-## Features 🌟
+## 🌟 Features
 
-- **Word of the Day** - Expand your vocabulary with new words, definitions, and examples
-- **Quote of the Day** - Get inspired with thought-provoking quotes from famous personalities
-- **Fact of the Day** - Learn something new with random useless facts
-- **NASA Picture of the Day** - Explore the cosmos with stunning images from NASA
-- **Cocktail of the Day** - Discover new drink recipes to try
-- **Activity Suggestion** - Beat boredom with random activity suggestions
-- **Historical Fact** - Travel back in time with historical facts from this day
+- **Word of the Day** - Expand your vocabulary with a new word, its definition, and usage examples
+- **Quote of the Day** - Be inspired with a thought-provoking quote from famous personalities
+- **Fact of the Day** - Learn something new with a random fact that will amaze you
+- **NASA APOD** - Explore the cosmos with stunning images from NASA's Astronomy Picture of the Day
+- **Cocktail of the Day** - Discover a new drink recipe to try and impress your friends
+- **Activity of the Day** - Beat boredom with a random activity suggestion to try today
+- **Historical Fact of the Day** - Travel back in time with an interesting historical fact from this day
 
-## Tech Stack 🛠️
+## 🌐 APIs Used
 
-- **Next.js 15** with App Router
-- **TypeScript**
-- **Tailwind CSS** for styling
-- **Server-Side Rendering (SSR)** for optimal performance
-- **API Integration** with multiple external services
+- **Wordnik** (Word of the Day) — `https://api.wordnik.com`
+- **ZenQuotes** (Quote of the Day) — `https://zenquotes.io`
+- **API Ninjas** (Fact of the Day) — `https://api-ninjas.com/api/facts`
+- **NASA APOD** (NASA APOD) — `https://api.nasa.gov/planetary/apod`
+- **TheCocktailDB** (Cocktail of the Day) — `https://www.thecocktaildb.com`
+- **Bored API** (Activity of the Day) — `https://bored.api.lewagon.com/api/activity`
+- **Today in History (Muffinlabs)** (Historical Fact of the Day) — `https://history.muffinlabs.com/date/{month}/{day}`
 
-## APIs Used 🌐
-
-- **WordsAPI** (RapidAPI) - Word definitions and examples
-- **Quotable API** - Inspirational quotes
-- **Useless Facts API** - Random facts
-- **NASA APOD API** - Astronomy Picture of the Day
-- **TheCocktailDB API** - Cocktail recipes
-- **BoredAPI** - Activity suggestions
-- **Today in History API** - Historical facts
-
-## Getting Started 🚀
+## 🚀 Setup
 
 ### Prerequisites
 
@@ -39,79 +32,38 @@ Your daily dose of amazing content! A Next.js app that aggregates various daily 
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the Repository:
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/rusheen7/dailyDose.git>
 cd dailydose
 ```
 
-2. Install dependencies:
+2. Install Dependencies:
 ```bash
 npm install
 ```
 
-3. Set up environment variables (optional for enhanced features):
-```bash
-# Create a .env.local file
-cp .env.example .env.local
-```
-
-4. Run the development server:
+3. Run the development server:
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## API Keys Setup 🔑
+## 🔑 API Keys Setup
 
-### NASA API Key (Optional)
+Create a .env.local file and do the following:
 1. Visit [NASA API Portal](https://api.nasa.gov/)
 2. Sign up for a free API key
 3. Add to your `.env.local` file
+```bash
+API_NINJAS_API_KEY="your-api-key-here"
+```
 
-### RapidAPI Key (Optional)
-1. Visit [RapidAPI](https://rapidapi.com/)
-2. Sign up and subscribe to WordsAPI
+
+1. Visit [Wordnik](https://developer.wordnik.com/)
+2. Sign up for a free API key
 3. Add to your `.env.local` file
-
-**Note:** The app works without API keys using fallback data, but having them it what makes the experience.
-
-## Features in Detail 📋
-
-### Word of the Day
-- Fetches random words with definitions
-- Shows part of speech and example usage
-- Uses WordsAPI for comprehensive word data
-
-### Quote of the Day
-- Displays inspirational quotes
-- Shows author and tags
-- Uses Quotable API for diverse quotes
-
-### Fact of the Day
-- Random useless facts
-- Includes source attribution
-- Uses Useless Facts API
-
-### NASA Picture of the Day
-- High-quality space images
-- Detailed explanations
-- Uses NASA's APOD API
-
-### Cocktail of the Day
-- Complete cocktail recipes
-- Ingredients and instructions
-- Uses TheCocktailDB API
-
-### Activity Suggestion
-- Random activity ideas
-- Difficulty and cost indicators
-- Uses BoredAPI
-
-### Historical Fact
-- Historical events from today's date
-- Year and detailed descriptions
-- Uses Today in History API
-
-**Daily Dose** - Your daily dose of amazing content! 🌟
+```bash
+NASA_API_KEY=your-api-key-here
+```
